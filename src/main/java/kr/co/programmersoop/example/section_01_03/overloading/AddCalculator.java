@@ -5,7 +5,7 @@ public class AddCalculator {
         return num1 + num2;
     }
 
-//    return 타입만 다르게 오버라이딩은 불가능
+//    return 타입만 다르게 오버로딩은 불가능
 //    public long add(int num1, int num2) {
 //        return num1 + num2;
 //    }
