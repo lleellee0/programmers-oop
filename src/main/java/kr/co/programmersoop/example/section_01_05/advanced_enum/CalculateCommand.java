@@ -11,7 +11,7 @@ public class CalculateCommand {
         this.num2 = num2;
     }
 
-    public CalculateType getFunctionalCalculateType() {
+    public CalculateType getCalculateType() {
         return calculateType;
     }
 

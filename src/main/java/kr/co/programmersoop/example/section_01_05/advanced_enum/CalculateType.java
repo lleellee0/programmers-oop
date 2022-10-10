@@ -13,6 +13,7 @@ public enum CalculateType {
     }
 
     private BiFunction<Integer, Integer, Integer> expression;
+
     public int calculate(int num1, int num2) {
         return this.expression.apply(num1, num2);
     }
