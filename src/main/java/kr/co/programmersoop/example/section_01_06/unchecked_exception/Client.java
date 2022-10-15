@@ -1,11 +1,11 @@
 package kr.co.programmersoop.example.section_01_06.unchecked_exception;
 
 public class Client {
-    public void throwsCheckedExceptionMethod() throws UncheckedException {
+    public void throwsUncheckedExceptionMethod() throws UncheckedException {
         throw new UncheckedException();
     }
 
-    public void tryCatchCheckedExceptionMethod() {
+    public void tryCatchUncheckedExceptionMethod() {
         try {
             throw new UncheckedException();
         } catch (UncheckedException e) {
