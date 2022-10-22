@@ -5,7 +5,7 @@ import java.util.Optional;
 public class OptionalAntiPatternExampleMain {
     public static void main(String[] args) {
         MapRepository mapRepository = new MapRepository();
-        Optional<String> string = mapRepository.getValue("NOT_EXIST_KEY");
+        Optional<String> string = mapRepository.getOptionalValue("NOT_EXIST_KEY");
 
         if(string.isPresent())
             System.out.println(string.get().toUpperCase());

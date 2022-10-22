@@ -12,7 +12,11 @@ public class MapRepository {
         map.put("EXIST_KEY", "value");
     }
 
-    public Optional<String> getValue(String key) {
+    public Optional<String> getOptionalValue(String key) {
         return Optional.ofNullable(map.get(key));
+    }
+
+    public String getValue(String key) {
+        return map.get(key);
     }
 }

@@ -5,7 +5,7 @@ import java.util.Optional;
 public class WithOptionalExampleMain {
     public static void main(String[] args) {
         MapRepository mapRepository = new MapRepository();
-        Optional<String> string = mapRepository.getValue("NOT_EXIST_KEY");
+        Optional<String> string = mapRepository.getOptionalValue("NOT_EXIST_KEY");
 
         string.ifPresentOrElse(
                 str -> str.toUpperCase(),               // Optional이 Empty가 아닐 때 실행
