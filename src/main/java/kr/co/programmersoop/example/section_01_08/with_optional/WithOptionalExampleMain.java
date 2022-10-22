@@ -8,7 +8,7 @@ public class WithOptionalExampleMain {
         Optional<String> string = mapRepository.getOptionalValue("NOT_EXIST_KEY");
 
         string.ifPresentOrElse(
-                str -> str.toUpperCase(),               // Optional이 Empty가 아닐 때 실행
+                str -> System.out.println(str.toUpperCase()),               // Optional이 Empty가 아닐 때 실행
                 () -> {
                     throw new RuntimeException("키가 존재하지 않습니다."); // Optional이 Empty일 때 실행
                 }
