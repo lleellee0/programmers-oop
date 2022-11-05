@@ -15,7 +15,7 @@ public class ForIterationExampleMain {
         integerList.add(60);
         integerList.add(70);
 
-        for (int i = 0; i < integerList.size() - 1; i++) {
+        for (int i = 0; i < integerList.size(); i++) {
             System.out.println(integerList.get(i));
         }
     }

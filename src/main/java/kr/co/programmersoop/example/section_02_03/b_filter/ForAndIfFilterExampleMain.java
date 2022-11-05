@@ -17,7 +17,7 @@ public class ForAndIfFilterExampleMain {
 
         Integer findNumber = null;
 
-        for (int i = 0; i < integerList.size() - 1; i++) {
+        for (int i = 0; i < integerList.size(); i++) {
             System.out.println(integerList.get(i));
 
             if(integerList.get(i).equals(40)) {
